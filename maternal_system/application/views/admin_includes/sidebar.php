@@ -34,11 +34,11 @@
                 <span class="text-light">
                   <i class="ti ti-layout-dashboard"></i>
                 </span>
-                <span class="hide-menu text-light">Dashboard</span>
+                <span class="hide-menu text-light">Overview</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="" aria-expanded="false">
+              <a class="sidebar-link" href="../adminhealthcenter/health_center" aria-expanded="false">
                 <span class="text-light">
                 <i class="ti ti-building-warehouse"></i>
                 </span>
@@ -46,7 +46,7 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="#" aria-expanded="false">
+              <a class="sidebar-link" href="../adminpatients/patients" aria-expanded="false">
                 <span class="text-light">
                 <i class="fas fa-wheelchair" style="font-size: 20px; padding-right: 2px"></i>
                 </span>
@@ -54,23 +54,23 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="#" aria-expanded="false">
+              <a class="sidebar-link" href="../adminhospital/hospital" aria-expanded="false">
+                <span class="text-light">
+                <i class="fas fa-hospital" style="font-size: 20px;padding-right: 5px" ></i>
+                </span>
+                <span class="hide-menu text-light">Hospital</span>
+              </a>
+            </li>
+            <li class="sidebar-item">
+              <a class="sidebar-link" href="../adminsystemuser/system_user" aria-expanded="false">
                 <span class="text-light">
                 <i class="fas fa-user-nurse" style="font-size: 20px; padding-right: 5px"></i>
                 </span>
-                <span class="hide-menu text-light">Staff</span>
+                <span class="hide-menu text-light">System User</span>
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="#" aria-expanded="false">
-                <span class="text-light">
-                <i class="fas fa-boxes" style="font-size: 20px;" ></i>
-                </span>
-                <span class="hide-menu text-light">Bed Slot</span>
-              </a>
-            </li>
-            <li class="sidebar-item">
-              <a class="sidebar-link" href="#" aria-expanded="false">
+              <a class="sidebar-link" href="../adminaccountlist/acount_lists" aria-expanded="false">
                 <span class="text-light">
                 <i class="far fa-address-book" style="font-size: 20px; padding-right: 5px"></i>
                 </span>

@@ -3,11 +3,11 @@
 class Admin extends CI_Controller {
 
     public function login(){   
-        if ( ! file_exists(APPPATH.'views/pages/admin_login_view.php')) {
+        if ( ! file_exists(APPPATH.'views/pages/admin/admin_login_view.php')) {
 		    show_404();
 		}
 
-		$this->load->view('pages/admin_login_view'); 
+		$this->load->view('pages/admin/admin_login_view'); 
     }
 
     public function checkuser($email="",$password=""){
@@ -60,10 +60,11 @@ class Admin extends CI_Controller {
     
             // Check the role_id for specific access levels
             if ($role_id == 1) {
-                $this->load->view('includes/header');
+                $this->load->view('admin_includes/header');
                 $this->load->view('admin_includes/sidebar');
                 $this->load->view('admin_includes/topbar');
-                $this->load->view('pages/admin_dashboard');
+                $this->load->view('pages/admin/admin_dashboard');
+                $this->load->view('admin_includes/footer');
             } else {
                 show_error('Access Denied!!!', 403);
             }
@@ -78,10 +79,11 @@ class Admin extends CI_Controller {
     
             // Check the role_id for specific access levels
             if ($role_id == 3) {
-                $this->load->view('includes/header');
+                $this->load->view('encoder_includes/header');
                 $this->load->view('encoder_includes/sidebar');
                 $this->load->view('encoder_includes/topbar');
-                $this->load->view('pages/encoder_dashboard');
+                $this->load->view('pages/encoder/encoder_dashboard');
+                $this->load->view('encoder_includes/footer');
              } else {
                  show_error('Access Denied!!!', 403);
              }
@@ -96,10 +98,11 @@ class Admin extends CI_Controller {
     
             // Check the role_id for specific access levels
             if ($role_id == 4) {
-                $this->load->view('includes/header');
+                $this->load->view('doctor_includes/header');
                 $this->load->view('doctor_includes/sidebar');
                 $this->load->view('doctor_includes/topbar');
-                $this->load->view('pages/doctor_dashboard');
+                $this->load->view('pages/doctor/doctor_dashboard');
+                $this->load->view('doctor_includes/footer');
              } else {
                  show_error('Access Denied!!!', 403);
              }

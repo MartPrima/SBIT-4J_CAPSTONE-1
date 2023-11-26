@@ -153,7 +153,8 @@
                     <hr class="">
                     <div class="row align-items-center">
                       <!-- content here -->
-                      <div id="calendar"></div>
+                      <div id="calendar">
+                      </div>
                     </div>
                   </div>
                 </div>

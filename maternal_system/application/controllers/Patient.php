@@ -2,11 +2,11 @@
 class Patient extends CI_Controller{
  
     public function login(){   
-        if ( ! file_exists(APPPATH.'views/pages/patient_login_view.php')) {
+        if ( ! file_exists(APPPATH.'views/pages/patient/patient_login_view.php')) {
 		    show_404();
 		}
 
-		$this->load->view('pages/patient_login_view'); 
+		$this->load->view('pages/patient/patient_login_view'); 
     }
 
     public function checkuser($email="",$password=""){
@@ -51,7 +51,7 @@ class Patient extends CI_Controller{
                 $this->load->view('includes/header');
                 $this->load->view('includes/sidebar');
                 $this->load->view('includes/topbar');
-                $this->load->view('pages/patient_dashboard.php');
+                $this->load->view('pages/patient/patient_dashboard.php');
             } else {
                 show_error('Access Denied!!!', 403);
             }
@@ -79,8 +79,9 @@ class Patient extends CI_Controller{
     }
     public function registration() {
         $this->load->view('includes/header');
-        $this->load->view('pages/patient_registration');
+        $this->load->view('pages/patient/patient_registration');
     }
 }
+
 
 ?>
