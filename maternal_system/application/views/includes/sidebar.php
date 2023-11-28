@@ -37,7 +37,7 @@
               </a>
             </li>
             <li class="sidebar-item">
-              <a class="sidebar-link" href="#" aria-expanded="false">
+              <a class="sidebar-link" href="../PatientMyProfile/myProfile" aria-expanded="false">
                 <span class="text-light">
                 <i class="ti ti-building-warehouse"></i>
                 </span>
